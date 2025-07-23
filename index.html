@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Sign-UP Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="side-image">
+      <img
+        src="images/kevin-wang-ctjoekUkeH0-unsplash.jpg"
+        alt="Image of a
+      street"
+        class="bg-image"
+      />
+      <div class="card-body">
+        <span><img src="images/odin-lined.png" alt="Odin Project Logo" class="logo"></span>Odin
+      </div>
+      <p class="credit">
+        by
+        <a
+          href="https://unsplash.com/@kevin_w_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Kevin Wang</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/a-street-at-dusk-in-japan-ctjoekUkeH0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+    <div class="sign-up-container">
+      <div class="content">
+        <div>
+          This is a simple sign up form. Please don't insert your personal or
+          sensitive information into this form.
+        </div>
+        <div><i>Okay Let's Go!!!</i></div>
+      </div>
+
+      <form action="#" method="get">
+        <fieldset>
+            <div class="heading">Personal Details</div>
+          <div class="form-control">
+            <p>
+              <label for="first-name">FIRST NAME <span class="req">*</label>
+              <br />
+              <input type="text" id="first-name" name="first-name" placeholder="Thor" required />
+            </p>
+
+            <p>
+              <label for="last-name">LAST NAME <span class="req">*</label>
+              <br />
+              <input type="text" id="last-name" name="last-name" placeholder="Odinson" required />
+            </p>
+
+            <p>
+              <label for="age">AGE <span class="req">*</label>
+              <br />
+              <input type="number" id="age" name="age" required />
+            </p>
+
+            <p>
+              <label for="address">ADDRESS <span class="req">*</label>
+              <br />
+              <textarea rows="5" cols="63" placeholder="Enter your address" required></textarea>
+            </p>
+
+            <p>
+              <label for="zip_code">POSTAL / ZIP CODE <span class="req">*</label>
+              <br />
+              <input
+                type="number"
+                id="zip_code"
+                name="zip_code"
+                title="Please enter a valid zip code"
+                placeholder="13245"
+                required
+              />
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="heading">Set up your Account</div>
+          <div class="form-control-2">
+            <p>
+              <label for="Email">EMAIL ADDRESS <span class="req">*</label>
+              <br />
+              <input type="email" id="Email" name="Email" placeholder="you@example.com" required />
+            </p>
+
+            <p>
+              <label for="user-password">PASSWORD <span class="req">*</label>
+              <br />
+              <input
+                type="password"
+                id="user-password"
+                name="user-password"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="confirm-password">CONFIRM PASSWORD <span class="req">*</label>
+              <br />
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+            </p>
+          </div>
+        </fieldset>
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p class="alternate-method">
+        Already have an account? <span class="login">Login Here</span>
+      </p>
+    </div>
+  </body>
+</html>
